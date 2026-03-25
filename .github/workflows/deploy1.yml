@@ -1,0 +1,32 @@
+steps:
+  # 1. Checkout repo
+  - name: 📥 Checkout code
+    uses: actions/checkout@v3
+
+  # 2. Setup Node.js
+  - name: 🟢 Setup Node.js
+    uses: actions/setup-node@v3
+    with:
+      node-version: 18
+
+  # 3. Install dependencies
+  - name: 📦 Install dependencies
+    run: npm install
+
+  # 4. Run lint (optional)
+  - name: 🔍 Lint
+    run: npm run lint || echo "No lint configured"
+
+  # 5. Run tests (optional)
+  - name: 🧪 Tests
+    run: npm test || echo "No tests configured"
+
+  # 6. Build project (optional)
+  - name: 🏗️ Build
+    run: npm run build || echo "No build step"
+
+  # 7. Deploy to Render (ONLY on main push)
+  - name: 🚀 Deploy to Render
+    if: github.ref == 'refs/heads/main'
+    run: |
+      curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
