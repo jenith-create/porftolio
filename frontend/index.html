@@ -1,69 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Mandala Jenith Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio of Mandala Jenith, BCA student and web developer in Bengaluru.">
+<title>Mandala Jenith | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Mandala Jenith</h1>
-<p>Welcome to my portfolio</p>
+<header class="nav">
+  <a class="brand" href="#top">Jenith<span>.</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact" class="pill">Contact</a>
+  </nav>
 </header>
 
-<section class="about">
-<h2>About Me</h2>
-<p>Name: Mandala Jenith</p>
-<p>Phone: 1000000</p>
-<p>Email: jenithsunny@gmail.com</p>
+<main id="top">
+
+<section class="hero">
+  <div class="avatar">
+    <!-- Put your photo in this folder and name it profile.jpg -->
+    <img src="profile.jpg" alt="Mandala Jenith" onerror="this.remove()">
+    <span>MJ</span>
+  </div>
+  <p class="eyebrow">BCA student · Web developer · Bengaluru</p>
+  <h1>Hi, I’m <em>Mandala Jenith</em></h1>
+  <p class="lead">I build fast, clean websites and web apps, and I’m learning cloud and backend development.</p>
+  <div class="cta">
+    <a class="btn" href="#contact">Hire me</a>
+    <a class="btn ghost" href="#projects">View projects</a>
+  </div>
+  <div class="socials">
+    <a href="https://github.com/jenith-create" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/jenith-mandala" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://wa.me/919739982510" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="mailto:jenithsunny@gmail.com">Email</a>
+  </div>
 </section>
 
-<section>
-<h2>Languages I Know</h2>
-<ul>
-<li>Telugu</li>
-<li>English</li>
-<li>Hindi</li>
-<li>Tamil</li>
-<li>Kannada</li>
-</ul>
+<section id="about" class="block">
+  <h2>About me</h2>
+  <div class="two">
+    <p>I’m a BCA student at Kristu Jayanti (Deemed to be University), Bengaluru. I like turning ideas into working products, like web apps with databases, automated deployment and clean, responsive design.</p>
+    <div class="card">
+      <h3>Languages I speak</h3>
+      <div class="chips"><span>Telugu</span><span>English</span><span>Hindi</span><span>Tamil</span><span>Kannada</span></div>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>My Certificates</h2>
-
-<a href="certificates/cer1.pdf" target="_blank">Certificate 1</a><br>
-<a href="certificates/cer2.pdf" target="_blank">Certificate 2</a><br>
-<a href="certificates/cer3.pdf" target="_blank">Certificate 3</a><br>
-<a href="certificates/cer4.pdf" target="_blank">Certificate 4</a><br>
-<a href="certificates/cer5.pdf" target="_blank">Certificate 5</a><br>
-<a href="certificates/cer6.pdf" target="_blank">Certificate 6</a><br>
-<a href="certificates/cer7.pdf" target="_blank">Certificate 7</a>
-
+<section id="skills" class="block">
+  <h2>Skills</h2>
+  <div class="chips big">
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Python</span><span>Java</span><span>Git and GitHub</span><span>CI/CD</span><span>AWS basics</span>
+  </div>
 </section>
 
-<section>
-<h2>Contact Me</h2>
-
-<form id="contactForm">
-
-<input type="text" id="name" placeholder="Your Name" required>
-<br>
-
-<input type="email" id="email" placeholder="Your Email" required>
-<br>
-
-<textarea id="message" placeholder="Your Message"></textarea>
-<br>
-
-<button type="submit">Send Message</button>
-
-</form>
-<p id="status"></p>
+<section id="projects" class="block">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Bank Prep AI</h3>
+      <p>An AI-powered exam application with a Python backend and MongoDB, deployed on Render with automated GitHub Actions pipelines.</p>
+      <div class="chips"><span>Python</span><span>MongoDB</span><span>CI/CD</span></div>
+      <a class="btn small" href="https://bankprepai-chay.onrender.com" target="_blank" rel="noopener">Live demo</a>
+    </article>
+    <article class="card">
+      <h3>This portfolio</h3>
+      <p>A responsive site with a working contact form. Messages are saved to MongoDB through a Node and Express API hosted on Render.</p>
+      <div class="chips"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+    </article>
+  </div>
 </section>
 
+<section id="certificates" class="block">
+  <h2>Certificates</h2>
+  <div class="grid">
+    <a class="card link" href="certificates/cer3.pdf" target="_blank" rel="noopener"><h3>AWS Academy Cloud Foundations</h3><p>AWS Academy · 20 hours · Feb 2026</p></a>
+    <a class="card link" href="certificates/cer1.pdf" target="_blank" rel="noopener"><h3>Front End Web Developer</h3><p>Infosys Springboard · Jan 2026</p></a>
+    <a class="card link" href="certificates/cer4.pdf" target="_blank" rel="noopener"><h3>Node JS: Advanced Concepts</h3><p>Udemy · 16 hours · Jan 2026</p></a>
+    <a class="card link" href="certificates/cer6.pdf" target="_blank" rel="noopener"><h3>JavaScript</h3><p>Infosys Springboard · Dec 2025</p></a>
+    <a class="card link" href="certificates/cer2.pdf" target="_blank" rel="noopener"><h3>HTML5 - The Language</h3><p>Infosys Springboard · Dec 2025</p></a>
+    <a class="card link" href="certificates/cer5.pdf" target="_blank" rel="noopener"><h3>CSS3</h3><p>Infosys Springboard · Dec 2025</p></a>
+    <a class="card link" href="certificates/cer7.pdf" target="_blank" rel="noopener"><h3>Digital Engineering (Gold)</h3><p>NASSCOM FutureSkills Prime · Oct 2025</p></a>
+  </div>
+</section>
+
+<section id="contact" class="block">
+  <h2>Contact me</h2>
+  <div class="two">
+    <div class="card">
+      <h3>Let’s work together</h3>
+      <p>Need a website for your business? Send me a message or reach out directly.</p>
+      <ul class="contact">
+        <li><b>Phone</b><a href="tel:+919739982510">+91 9739982510</a></li>
+        <li><b>Email</b><a href="mailto:jenithsunny@gmail.com">jenithsunny@gmail.com</a></li>
+        <li><b>WhatsApp</b><a href="https://wa.me/919739982510" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        <li><b>GitHub</b><a href="https://github.com/jenith-create" target="_blank" rel="noopener">github.com/jenith-create</a></li>
+        <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/jenith-mandala" target="_blank" rel="noopener">View my LinkedIn profile</a></li>
+      </ul>
+    </div>
+    <form id="contactForm" class="card">
+      <h3>Send a message</h3>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="How can I help?" required></textarea>
+      <button type="submit" class="btn" id="sendBtn">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>© 2026 Mandala Jenith · Bengaluru, India</footer>
 <script src="script.js"></script>
-
 </body>
 </html>
